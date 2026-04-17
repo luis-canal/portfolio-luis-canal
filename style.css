@@ -8,6 +8,7 @@ body {
     font-family: 'Inter', sans-serif;
     background: #0f172a;
     color: #e2e8f0;
+    transition: backgorund 0.3s, color 0.3s;
 }
 
 header {
@@ -19,11 +20,12 @@ header {
     width: 100%;
     top: 0;
     transition: 0.3s;
+    z-index: 1000;
 }
 
 header.scrolled {
     background: #020617;
-    box-shadow: 0 5px 20px rgba(0,0, 0, 0.3);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 nav a {
@@ -123,4 +125,47 @@ section.show {
 .card:hover {
     transform: translateY(-8px);
     border-color: #38bdf8;
+}
+
+body.light {
+    background: #f1f5f9;
+    color: #020617;
+}
+
+body.light header {
+    background: #ffffff;
+}
+
+body.light .card {
+    background: #ffffff;
+    border: 1px solid #ccc;
+}
+
+body.light nav a {
+    color: #020617;
+}
+
+body.light .hero {
+    background: #e2e8f0;
+}
+
+body.light section {
+    background: #f1f5f9;
+}
+
+body.light .card p {
+    color: #334155;
+}
+
+button {
+    position: relative;
+    z-index: 999;
+}
+#toggleTheme {
+    margin-left: 20px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    z-index: 1001;
 }

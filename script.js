@@ -19,3 +19,17 @@ window.addEventListener("scroll", () => {
         header.classList.remove("scrolled");
     }
 });
+
+const toggle = document.getElementById("toggleTheme");
+
+if (toggle) {
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("light");
+
+    if (document.body.classList.contains("light")) {
+      toggle.textContent = "🌙"; 
+    } else {
+      toggle.textContent = "☀️"; 
+    }
+  });
+}
