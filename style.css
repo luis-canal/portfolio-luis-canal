@@ -36,10 +36,10 @@ nav a:hover {
     color: #38bdf8;
 }
 
-/* HERO */
 .hero {
     text-align: center;
     padding: 80px 10%;
+    padding-top: 120px;
 }
 
 .hero h2 {
@@ -54,9 +54,14 @@ nav a:hover {
     color: #020617;
     border-radius: 8px;
     text-decoration: none;
+    transition: 0.3s;
 }
 
-/* SEÇÕES */
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(56, 189, 248, 0.4);
+}
+
 section {
     padding: 60px 10%;
 }
