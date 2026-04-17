@@ -10,12 +10,20 @@ body {
     color: #e2e8f0;
 }
 
-/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
     padding: 20px 10%;
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: 0.3s;
+}
+
+header.scrolled {
     background: #020617;
+    box-shadow: 0 5px 20px rgba(0,0, 0, 0.3);
 }
 
 nav a {
