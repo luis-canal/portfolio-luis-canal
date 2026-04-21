@@ -61,12 +61,31 @@ nav a:hover {
     padding-top: 80px;
 
     gap: 10px;
+    overflow: hidden;
 
     background: linear-gradient(
-        to bottom,
+        -45deg,
         #0f172a,
-        #111827
+        #111827,
+        #1e293b,
+        #0f172a
     );
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .hero h2 {
@@ -205,10 +224,15 @@ body.light nav a {
 
 body.light .hero {
     background: linear-gradient(
-        to bottom,
+        -45deg,
         #f8fafc,
-        #e2e8f0
+        #e2e8f0,
+        #dbeafe,
+        #f8fafc
     );
+
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
 }
 
 body.light section {
