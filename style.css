@@ -63,29 +63,7 @@ nav a:hover {
     gap: 10px;
     overflow: hidden;
 
-    background: linear-gradient(
-        -45deg,
-        #0f172a,
-        #111827,
-        #1e293b,
-        #0f172a
-    );
-    background-size: 400% 400%;
-    animation: gradientMove 12s ease infinite;
-}
-
-@keyframes gradientMove {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
+    background: #0b1120;
 }
 
 .hero h2 {
@@ -160,9 +138,10 @@ section {
 }
 
 section h2 {
-    margin-bottom: 30px;
+    font-size: 36px;
+    text-align: left;
+    margin-bottom: 35px;
 }
-
 
 section.show {
     opacity: 1;
@@ -204,6 +183,32 @@ section.show {
     border-color: #38bdf8;
 }
 
+#sobre {
+    background: #111827;
+    padding: 120px 20%;
+}
+
+#projetos {
+    background: #0b1120;
+    padding: 120px 20%;
+}
+
+#contato {
+    background: #111827;
+    padding: 120px 20%;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #cbd5e1;
+    margin-bottom: 24px;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
 body.light {
     background: #f1f5f9;
     color: #020617;
@@ -243,6 +248,22 @@ body.light .card p {
     color: #334155;
 }
 
+body.light #sobre {
+    background: #f8fafc;
+}
+
+body.light #projetos {
+    background: #f1f5f9;
+}
+
+body.light #contato {
+    background: #f8fafc;
+}
+
+body.light .about-content p {
+    color: #334155;
+}
+
 #toggleTheme {
     margin-left: 20px;
     padding: 8px 12px;
@@ -256,4 +277,25 @@ section a {
     text-decoration: none;
     color: #38bdf8;
     font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 10%;
+    background: #020617;
+    border-top: 1px solid #1e293b;
+}
+
+footer p {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+body.light footer {
+    background: #ffffff;
+    border-top: 1px solid #d1d5db;
+}
+
+body.light footer p {
+    color: #475569;
 }
