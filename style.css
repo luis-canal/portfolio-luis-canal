@@ -173,3 +173,9 @@ button {
     border-radius: 6px;
     z-index: 1001;
 }
+
+section a {
+    text-decoration: none;
+    color: #38bdf8;
+    font-weight: bold;
+}
