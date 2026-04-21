@@ -13,6 +13,7 @@ body {
 
 header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 20px 10%;
     background: transparent;
@@ -28,10 +29,19 @@ header.scrolled {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
+nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
 nav a {
-    margin-left: 20px;
     text-decoration: none;
     color: #e2e8f0;
+    font-weight: 500;
 }
 
 nav a:hover {
