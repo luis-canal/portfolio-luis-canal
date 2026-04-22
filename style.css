@@ -148,6 +148,36 @@ section.show {
     transform: translateY(0);
 }
 
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-items span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 17px;
+    color: #cbd5e1;
+}
+
+.skill-group h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.skill-group p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #cbd5e1;
+}
+
+.skill-group i {
+    font-size: 18px;
+}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -261,6 +291,14 @@ body.light #contato {
 }
 
 body.light .about-content p {
+    color: #334155;
+}
+
+body.light .skill-group p {
+    color: #334155;
+}
+
+body.light .skill-items span {
     color: #334155;
 }
 
