@@ -260,13 +260,67 @@ section.show {
     padding: 120px 20%;
 }
 
-#projetos {
+#formacao {
     background: #0b1120;
     padding: 120px 20%;
 }
 
-#contato {
+.education-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.education-card {
+    background: #020617;
+    border: 1px solid #1e293b;
+    border-radius: 16px;
+    padding: 32px;
+    transition: 0.3s;
+}
+
+.education-card:hover {
+    transform: translateY(-6px);
+    border-color: #38bdf8;
+}
+
+.education-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.education-card h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #38bdf8;
+}
+
+.education-card span {
+    display: block;
+    margin-bottom: 20px;
+    color: #94a3b8;
+    font-size: 15px;
+}
+
+.education-card p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #cbd5e1;
+    margin-bottom: 14px;
+}
+
+.education-card p:last-child {
+    margin-bottom: 0;
+}
+
+#projetos {
     background: #111827;
+    padding: 120px 20%;
+}
+
+#contato {
+    background: #0b1120;
     padding: 120px 20%;
 }
 
@@ -324,12 +378,26 @@ body.light #sobre {
     background: #f8fafc;
 }
 
-body.light #projetos {
+body.light #formacao {
     background: #f1f5f9;
 }
 
-body.light #contato {
+body.light .education-card {
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+}
+
+body.light .education-card p,
+body.light .education-card span {
+    color: #334155;
+}
+
+body.light #projetos {
     background: #f8fafc;
+}
+
+body.light #contato {
+    background: #f1f5f9;
 }
 
 body.light .about-content p {
