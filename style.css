@@ -214,6 +214,9 @@ section.show {
     border-radius: 12px;
     transition: 0.3s;
     border: 1px solid #1e293b;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .card h3 {
@@ -230,6 +233,7 @@ section.show {
     text-decoration: none;
     color: #38bdf8;
     font-weight: bold;
+    margin-top: auto;
 }
 
 .card:hover {
