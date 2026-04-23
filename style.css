@@ -324,6 +324,36 @@ section.show {
     padding: 120px 20%;
 }
 
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 700px;
+}
+
+.contact-links a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    text-decoration: none;
+    color: #e2e8f0;
+    font-size: 18px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.contact-links a i {
+    font-size: 35px;
+    min-width: 28px;
+}
+
+.contact-links a:hover {
+    color: #38bdf8;
+    transform: translateX(4px);
+}
+
 .about-content p {
     font-size: 18px;
     line-height: 1.8;
@@ -398,6 +428,14 @@ body.light #projetos {
 
 body.light #contato {
     background: #f1f5f9;
+}
+
+body.light .contact-links a {
+    color: #020617;
+}
+
+body.light .contact-links a:hover {
+    color: #38bdf8;
 }
 
 body.light .about-content p {
