@@ -23,13 +23,13 @@ window.addEventListener("scroll", () => {
 const toggle = document.getElementById("toggleTheme");
 
 if (toggle) {
-  toggle.addEventListener("click", () => {
-    document.body.classList.toggle("light");
+    toggle.addEventListener("click", () => {
+        document.body.classList.toggle("light");
 
-    if (document.body.classList.contains("light")) {
-      toggle.textContent = "🌙"; 
-    } else {
-      toggle.textContent = "☀️"; 
-    }
-  });
+        if (document.body.classList.contains("light")) {
+            toggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
+        } else {
+            toggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+        }
+    });
 }
