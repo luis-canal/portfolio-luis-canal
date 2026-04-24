@@ -23,13 +23,24 @@ window.addEventListener("scroll", () => {
 const toggle = document.getElementById("toggleTheme");
 
 if (toggle) {
+    const temaSalvo = localStorage.getItem("theme");
+
+    if (temaSalvo === "light") {
+        document.body.classList.add("light");
+        toggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    } else {
+        toggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    }
+
     toggle.addEventListener("click", () => {
         document.body.classList.toggle("light");
 
         if (document.body.classList.contains("light")) {
             toggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
+            localStorage.setItem("theme", "light");
         } else {
             toggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+            localStorage.setItem("theme", "dark");
         }
     });
 }
